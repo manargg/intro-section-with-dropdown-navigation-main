@@ -102,6 +102,9 @@ body{
 .btn-hero{
     background-color: var(--Almost-Black);
     color: var(--Almost-White);
+    cursor: pointer;
+    font-size: 1em;
+
 }
 .sub-menu{
     position: absolute;
@@ -175,7 +178,6 @@ body{
     padding: 0;
     width: 50%;
     padding-left: 100px;
-
 }
 
 .content_heading{
@@ -281,6 +283,17 @@ body{
     max-height: 200px;
     padding: 10px 0;
 }
+.menu-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+.menu-btn .btn-2{
+    width: 100%;
+}
 
 /*========================MEDIA QUERY============================*/
 @media (max-width: 1165px)  {
@@ -379,4 +392,10 @@ body{
     width: 50px;
  }
 
+}
+@media (max-width:480px) and (min-width: 320px) {
+.content_description{
+    width: 90%;
+    font-size: 1em;
+}
 }
